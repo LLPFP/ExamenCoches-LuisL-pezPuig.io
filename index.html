@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automóviles de Alto Rendimiento</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+
+        <h1 class="mb-5 text-center">Automóviles de Alto Rendimiento</h1>
+
+        <!-- Selector per triar cotxes 1 -->
+
+        <div class="form-group d-inline-block w-25">
+            <label>Selecciona los coches a comparar:</label>
+            <select class="form-control border border-black" id="selectCoches1">
+                <option value="Bugatti Chiron Super Sport 300+">Bugatti Chiron Super Sport 300+</option>
+                <option value="Koenigsegg Jesko">Koenigsegg Jesko</option>
+                <option value="Hennessey Venom F5">Hennessey Venom F5</option>
+                <option value="Rimac C_Two">Rimac C_Two</option>
+                <option value="Lamborghini Sian">Lamborghini Sian</option>
+            </select>
+        </div>
+
+        <!-- Selector per triar cotxes 2 -->
+        <div class="form-group d-inline-block me-3 w-25">
+            <select class="form-control border border-black" id="selectCoches2">
+                <option value="Bugatti Chiron Super Sport 300+">Bugatti Chiron Super Sport 300+</option>
+                <option value="Koenigsegg Jesko">Koenigsegg Jesko</option>
+                <option value="Hennessey Venom F5">Hennessey Venom F5</option>
+                <option value="Rimac C_Two">Rimac C_Two</option>
+                <option value="Lamborghini Sian">Lamborghini Sian</option>
+            </select>
+
+        
+        </div>
+
+             <!-- Botó de comparació -->
+            <button class="btn btn-primary" id="btnComparar">Comparar</button>
+        
+
+
+            <!-- Taula on es mostrarà la comparació -->
+            <table id="taulaComparativa" class="border border-black mt-5">
+                    
+            </table>
+
+
+
+
+        <!-- Input i botó de cerca per cavalls -->
+        <div class="form-group mt-4 ">
+            <label>Caballos mínimos:</label>
+            <input type="number" class="form-control w-50 border border-black " id="inputCaballos">
+            <button class="btn btn-secondary" id="btnCaballos">Buscar Coches</button>
+            <p class="d-inline-block ms-5 mt-3" id="fechaActual"></p>
+        </div>
+
+ 
+
+        <ul class="mt-4" id="listaCaballos">
+        
+        </ul>
+
+       
+
+        <div class="row mt-5" id="coches">
+            <!-- Aquí es mostrarà la informació dels cotxes seleccionats o els resultats de la cerca -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
